@@ -34,6 +34,7 @@ class _AppVidaPageState extends State<AppVidaPage> {
 
     setState(() {
       resultFaseDaVida;
+      idadeController.clear();
     });
   }
 
