@@ -67,6 +67,8 @@ class _AppVidaPageState extends State<AppVidaPage> {
                     ),
                     labelText: 'Idade',
                     labelStyle: const TextStyle(fontSize: 18),
+                    prefixIcon:
+                        const Icon(Icons.person), // Ícone de altura à esquerda
                   ), //inputFormatters
                   inputFormatters: [
                     FilteringTextInputFormatter
