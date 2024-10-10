@@ -16,17 +16,33 @@ class _AppVidaPageState extends State<AppVidaPage> {
   determinarFaseDaVida() {
     int idade = int.parse(idadeController.text);
 
+    // if (idade < 3) {
+    //   resultFaseDaVida = 'Infância';
+    // } else if (idade >= 3 && idade <= 12) {
+    //   resultFaseDaVida = 'Pré-adolescência';
+    // } else if (idade >= 13 && idade <= 19) {
+    //   resultFaseDaVida = 'Adolescência';
+    // } else if (idade >= 20 && idade <= 35) {
+    //   resultFaseDaVida = 'Juventude';
+    // } else if (idade >= 36 && idade <= 55) {
+    //   resultFaseDaVida = 'Meia-idade"';
+    // } else if (idade >= 56 && idade <= 130) {
+    //   resultFaseDaVida = 'Terceira Idade';
+    // } else {
+    //   resultFaseDaVida = 'Idade Inválida';
+    // }
+
     if (idade < 3) {
       resultFaseDaVida = 'Infância';
-    } else if (idade >= 3 && idade <= 12) {
+    } else if (idade <= 12) {
       resultFaseDaVida = 'Pré-adolescência';
-    } else if (idade >= 13 && idade <= 19) {
+    } else if (idade <= 19) {
       resultFaseDaVida = 'Adolescência';
-    } else if (idade >= 20 && idade <= 35) {
+    } else if (idade <= 35) {
       resultFaseDaVida = 'Juventude';
-    } else if (idade >= 36 && idade <= 55) {
+    } else if (idade <= 55) {
       resultFaseDaVida = 'Meia-idade"';
-    } else if (idade >= 56 && idade <= 130) {
+    } else if (idade <= 130) {
       resultFaseDaVida = 'Terceira Idade';
     } else {
       resultFaseDaVida = 'Idade Inválida';
